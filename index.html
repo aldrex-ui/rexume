@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <style>
+    /* ===== Base Reset ===== */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      background-color: #f4f7fa;
+      color: #1b1f23;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ===== Layout ===== */
+    main {
+      max-width: 850px;
+      margin: 60px auto;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 45px 55px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ===== Header ===== */
+    header {
+      border-bottom: 3px solid #00a3e0;
+      padding-bottom: 20px;
+      margin-bottom: 40px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #00a3e0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-text { text-align: left; }
+
+    .profile-text h1 {
+      font-size: 30px;
+      font-weight: 700;
+      color: #0b1520;
+      margin-bottom: 4px;
+    }
+
+    .profile-text p {
+      color: #444;
+      font-size: 15px;
+      margin: 4px 0;
+    }
+
+    .profile-text a {
+      color: #00a3e0;
+      text-decoration: none;
+    }
+
+    .profile-text a:hover { text-decoration: underline; }
+
+    /* ===== Sections ===== */
+    section, nav { margin-bottom: 35px; }
+
+    h2 {
+      border-left: 5px solid #00a3e0;
+      padding-left: 10px;
+      font-size: 20px;
+      margin-bottom: 15px;
+      color: #0b1520;
+    }
+
+    /* ===== Lists & Articles ===== */
+    ul { list-style: disc; margin-left: 25px; }
+    ul li { margin-bottom: 6px; }
+    article { margin-bottom: 15px; }
+    h3 { font-size: 17px; color: #111; margin-bottom: 2px; }
+    small { color: #666; display: block; margin-bottom: 5px; }
+    p { color: #333; margin-bottom: 8px; }
+
+    /* ===== Navigation Links ===== */
+    .nav-links ul { list-style: none; margin-top: 10px; }
+    .nav-links a {
+      color: #00a3e0;
+      text-decoration: none;
+    }
+    .nav-links a:hover { text-decoration: underline; }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      border-top: 2px solid #00a3e0;
+      padding-top: 15px;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 600px) {
+      main { padding: 25px 20px; margin: 20px; }
+      .profile { flex-direction: column; text-align: center; }
+      .profile-text { text-align: center; }
+      .profile-img { width: 100px; height: 100px; }
+      .profile-text h1 { font-size: 26px; }
+      h2 { font-size: 18px; }
+    }
+
+    /* ===== Print Styles ===== */
+    @media print {
+      body { background: #fff; color: #000; }
+      main { box-shadow: none; border: none; margin: 0; padding: 0 40px; }
+      header { border: none; }
+      a { color: #000; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="profile">
+        <img src="img/me.png" alt="Profile photo of Aldwin Rex A. Francisco" class="profile-img">
+        <div class="profile-text">
+          <h1>Aldwin Rex A. Francisco</h1>
+          <p>Frontend Developer</p>
+          <p>Vigan City, Ilocos Sur • 
+            <a href="mailto:arafrancisco@unp.edu.ph">arafrancisco@unp.edu.ph</a>
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section id="summary">
+      <h2>Summary</h2>
+      <p>
+        A motivated and detail-oriented Computer Science student with a passion for front-end and mobile development.
+        Focused on creating efficient, accessible, and user-friendly applications using modern web technologies.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <article>
+        <h3>College</h3>
+        <p><strong>Bachelor of Science in Computer Science</strong><br>
+        University of Northern Philippines, 2022  – Present</p>
+      </article>
+      <article>
+        <h3>Senior High School</h3>
+        <p><strong>STEM Strand</strong><br>
+        Asia Pacific College of Advanced Studies, 2018 – 2020</p>
+      </article>
+      <article>
+        <h3>Junior High School</h3>
+        <p>Justice Emilio Angeles Gancayco Memorial High School, 2016 – 2018</p>
+        <p>Jose Rizal Institute, 2012 – 2015</p>
+      </article>
+      <article>
+        <h3>Elementary</h3>
+        <p>Orion Elementary School, 2005 - 2012</p>
+      </article>
+    </section>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <article>
+        <h3>Freelance Web & Mobile Developer</h3>
+        <small>2023 – Present | Vigan City</small>
+        <p>Develops responsive web apps using React, Tailwind, and Firebase. Focused on performance and SEO optimization.</p>
+      </article>
+      <article>
+        <h3>Frontend Developer</h3>
+        <small>2025 – Present | Remote / Freelance</small>
+        <p>
+          Develops and maintains dynamic, responsive interfaces using HTML, CSS, and modern JavaScript frameworks.
+          Collaborates with backend teams to ensure seamless integration and optimal performance across all devices.
+        </p>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React & Firebase Development</li>
+        <li>UI/UX Design & Accessibility</li>
+        <li>Git & Version Control</li>
+      </ul>
+    </section>
+
+    <nav class="nav-links">
+      <h2>Explore More</h2>
+      <ul>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="contact.html">Contact Details</a></li>
+      </ul>
+    </nav>
+
+    <footer>
+      <p>&copy; 2025 Aldwin Rex A. Francisco. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>
